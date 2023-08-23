@@ -1,7 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Bricolage',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +15,150 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*.table{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+.table {
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+.table_header {
+  text-align: center;
+  background-color: #d5d1defe;
+  padding: 20px;
+}
+
+
+
+
+
+.table_body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+
+th,
+td {
+  padding: 1rem;
+}
+
+
+tbody tr:hover{
+  background-color: #0582ca;
+  color: white;
+  
+}
+
+.fill-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, transparent 0%, #0582ca 50%, #0582ca 100%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .fill-effect {
+  transform: translateX(0);
+  
+  
+}
+
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.employee {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin-bottom: 15px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.name {
+  margin: 0;
+  font-size: 24px;
+  color: #0582ca;
+}
+
+.additional-text {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #0582ca;
+  
+}
+
+main{
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.link-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-list li {
+  margin: 10px;
+}
+
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  background: white;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+}
+
+.text-box{
+  
+}
+
+.left-container{
+  left:0;
+
+}
+.right-container{
+  left:50%;
 }
