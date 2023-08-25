@@ -28,7 +28,7 @@ const Analogistikes = () => {
         <div class="hidden md:flex items-center ml-4">
         <div class="hidden md:flex items-center ml-4"><a href="#" class="mx-3 py-2 text-sm font-medium text-gray-700 uppercase hover:text-blue-500">ΑΡΧΙΚΗ</a>
         <div class="relative group mx-3 py-2"><a href="#" class="flex items-center text-sm font-medium text-gray-700 uppercase hover:text-blue-500">ΤΟ ΤΑΜΕΙΟ<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2 transform transition-transform duration-300 "><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-        <div class="absolute left-0 mt-2 w-56 opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white shadow-lg z-10"><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΙΣΤΟΡΙΚΟ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΣΚΟΠΟΣ-ΚΛΑΔΟΙ ΑΣΦΑΛΙΣΗΣ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΔΙΟΙΚΗΣΗ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΚΑΤΑΣΤΑΤΙΚΟ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΕΣΩΤΕΡΙΚΟΣ ΚΑΝΟΝΙΣΜΟΣ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΕΝΗΜΕΡΩΤΙΚΑ ΦΥΛΛΑΔΙΑ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΝΟΜΟΘΕΣΙΑ</a><a href="#" class="block px-4 py-2 text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΑΝΤΙΠΡΟΣΩΠΟΙ ΑΝΑ ΝΟΜΟ</a></div>
+        <div class="absolute left-0 mt-2 w-56 opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white shadow-lg z-10"><a href="#" class="block px-4 py-2 border-b hover:bg-customBlue hover:text-white text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΙΣΤΟΡΙΚΟ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΣΚΟΠΟΣ-ΚΛΑΔΟΙ ΑΣΦΑΛΙΣΗΣ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΔΙΟΙΚΗΣΗ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΚΑΤΑΣΤΑΤΙΚΟ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΕΣΩΤΕΡΙΚΟΣ ΚΑΝΟΝΙΣΜΟΣ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΕΝΗΜΕΡΩΤΙΚΑ ΦΥΛΛΑΔΙΑ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΝΟΜΟΘΕΣΙΑ</a><a href="#" class="block px-4 py-2 text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΑΝΤΙΠΡΟΣΩΠΟΙ ΑΝΑ ΝΟΜΟ</a></div>
         </div>
         <div class="relative group mx-3 py-2"><a href="#" class="flex items-center text-sm font-medium text-gray-700 uppercase hover:text-blue-500">ΣΥΜΜΕΤΟΧΗ<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2 transform transition-transform duration-300 "><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
         <div class="absolute left-0 mt-2 w-56 opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white shadow-lg z-10"><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΠΛΕΟΝΕΚΤΗΜΑΤΑ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΕΓΓΡΑΦΗ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΕΙΣΦΟΡΕΣ</a><a href="#" class="block px-4 py-2 border-b text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΠΑΡΟΧΕΣ</a><a href="#" class="block px-4 py-2 text-xs font-light text-gray-700 hover:text-blue-500 hover:bg-gray-100">ΔΙΑΓΡΑΦΗ</a></div>
@@ -81,7 +81,7 @@ const Analogistikes = () => {
         </tr>
                 </thead>
                 <tbody className="w-95 max-h-[calc(89%-0.8rem)] bg-white-50 m-2 rounded-lg overflow-auto border border-gray-300 py-2 px-4">
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Μελέτη ΤΕΑ ΕΤΔΕΑΠΛ 31/12/2010
                         </td>
@@ -89,7 +89,7 @@ const Analogistikes = () => {
                             <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className=""></img><a target="_blank" href="https://icons8.com"></a>
                             </a></td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Μελέτη ΤΕΑ ΕΤΔΕΑΠΛ 31/12/2012
                         </td>
@@ -99,7 +99,7 @@ const Analogistikes = () => {
                             </a>
                         </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Μελέτη ΤΕΑ ΕΤΔΕΑΠΛ 31/12/2013 
                         </td>
@@ -109,7 +109,7 @@ const Analogistikes = () => {
                             </a>
                         </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Μελέτη ΤΕΑ ΕΤΔΕΑΠΛ 31/12/2014
                         </td>
@@ -119,7 +119,7 @@ const Analogistikes = () => {
                             </a>
                         </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Μελέτη ΤΕΑ ΕΤΔΕΑΠΛ 31/12/2015
                         </td>
@@ -129,7 +129,7 @@ const Analogistikes = () => {
                             </a>
                         </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Μελέτη ΤΕΑ ΕΤΔΕΑΠΛ 31/12/2016
                         </td>
@@ -139,7 +139,7 @@ const Analogistikes = () => {
                             </a>
                         </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Έκθεση ΤΕΑ ΑΠΛ 31/12/2017 
                         </td>
@@ -149,7 +149,7 @@ const Analogistikes = () => {
                             </a>
                         </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Έκθεση ΤΕΑ ΑΠΛ 31/12/2018
                         </td>
@@ -159,7 +159,7 @@ const Analogistikes = () => {
                             </a>
                         </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Έκθεση ΤΕΑ ΑΠΛ 31/12/2019 
                         </td>
@@ -169,7 +169,7 @@ const Analogistikes = () => {
                             </a>
                             </td>
                     </tr>
-                    <tr className="border-b">
+                    <tr className="border-b hover:bg-customBlue hover:text-white">
                         <td className="text-left underline">
                             Αναλογιστική Έκθεση ΤΕΑ ΑΠΛ 31/12/2020
                         </td>

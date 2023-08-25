@@ -225,15 +225,15 @@ const Dioikisoi = () => {
       <th className="p-5">Ονοματεπώνυμο</th>
     </thead>
 <tbody className="border border-gray-300">
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Πρόεδρος</td>
 <td>Μαυρογιωργος Σωκράτης</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Μέλος</td>
 <td>Μινογιαννης Κοσμάς</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Μέλος</td>
 <td>Παπουλιας Μιχαήλ</td>
 </tr>

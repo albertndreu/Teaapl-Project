@@ -14,6 +14,9 @@ import Paroxes from './Summetoxh/Paroxes';
 import Diagrafh from './Summetoxh/Diagrafh';
 import Ependytiki from './Oikonomika-stoixeia/Ependytiki-epitropi';
 import Analogistikes from './Oikonomika-stoixeia/Analogistikes-meletes';
+import Oikonomika from './Oikonomika-stoixeia/Oikonomika-stoixeia';
+import Isologismoi from './Oikonomika-stoixeia/Isologismoi';
+import Ergo from './Enimerosh/To-ergo-tou-tameiou';
 
 function App() {
   return (
@@ -36,6 +39,10 @@ function App() {
       <Route path="Diagrafh" element={<Diagrafh/>}/>
       <Route path="Ependytiki" element={<Ependytiki/>}/>
       <Route path="Analogistikes" element={<Analogistikes/>}/>
+      <Route path="Oikonomika" element={<Oikonomika/>}/>
+      <Route path="Isologismoi" element={<Isologismoi/>}/>
+      <Route path="Ergo" element={<Ergo/>}/>
+
       </Routes>
     </div>
     </Router>

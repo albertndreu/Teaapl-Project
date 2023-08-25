@@ -122,7 +122,7 @@ const Pleonekthmata = () => {
 
 </div>
 
-<p className="text-lg  bg-blue-100 px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5" data-aos="zoom-in" data-aos-duration="2500"  data-aos-once="true"><span className="underline">Μπορώ να συμμετάσχω στην διοίκηση του Ταμείου</span> καθώς κάθε μέλος έχει το δικαίωμα του εκλέγειν και του εκλέγεσθαι.</p>
+<p className="text-lg px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5" data-aos="zoom-in" data-aos-duration="2500"  data-aos-once="true"><span className="underline">Μπορώ να συμμετάσχω στην διοίκηση του Ταμείου</span> καθώς κάθε μέλος έχει το δικαίωμα του εκλέγειν και του εκλέγεσθαι.</p>
 
 <br></br>
     </div>

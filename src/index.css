@@ -17,14 +17,8 @@ code {
     monospace;
 }
 
-/*.table{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-*/
-
+/*κωδικας για ολα τα table των σελιδων 
+οπως πχ. στην σελιδα αντιπροσοποι*/
 .table {
   margin-left: 250px;
   margin-top: 100px;
@@ -57,12 +51,8 @@ td {
 }
 
 
-tbody tr:hover{
-  background-color: #0582ca;
-  color: white;
-  
-}
 
+/*κωδικας για το κουμπι στην σελιδα Antiprosopoi*/
 .fill-effect {
   position: absolute;
   top: 0;
@@ -80,13 +70,7 @@ button:hover .fill-effect {
   
 }
 
-.employee-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  margin-top: 20px;
-}
-
+/*κωδικας για το καθε ατομο στην διοικηση*/
 .employee {
   background-color: white;
   border-radius: 8px;
@@ -109,7 +93,7 @@ button:hover .fill-effect {
   color: #0582ca;
   
 }
-
+/*κωδικας για την σελιδα  εισφορες,και αντριπροσοποι για το table*/
 main{
   padding: 32px;
   display: flex;
@@ -118,47 +102,6 @@ main{
   justify-content: center;
   min-height: 100vh;
 }
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: #3498db;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-.link-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.link-list li {
-  margin: 10px;
-}
 
-.timeline{
-  position: relative;
-  max-width: 1200px;
-  margin: 100px auto;
-}
 
-.container {
-  padding: 10px 50px;
-  position: relative;
-  width: 50%;
-  background: white;
-  border: 2px solid #3498db;
-  border-radius: 10px;
-}
-
-.text-box{
-  
-}
-
-.left-container{
-  left:0;
-
-}
-.right-container{
-  left:50%;
-}

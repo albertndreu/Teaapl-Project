@@ -1,6 +1,14 @@
-import PDF from './images/icon.png';
+import React, { useEffect  } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Kefailaio from './images/amoibaio_kefalaio.png';
 
-const Nomothesia = () => {
+const Oikonomika = () => {
+useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
     return ( 
         <div>
             <header>
@@ -71,111 +79,74 @@ const Nomothesia = () => {
                                                         </div>
                                                         </nav>
     </header>
-            <section className="mb-10 flex justify-center items-center min-h-screen bg-white-100">
-            <table className="w-1/2 max-w-2xl mx-auto bg-white border-collapse border border-gray-300 mt-20">
-                <thead className="text-xl font-bold text-customBlue p-4 text-lg leading-10  border-b-2 border-customBlue pb-2 bg-customBlue text-white">
-                   <tr className="border-b">
-            <th className="text-center py-2 pl-2" colSpan="2">
-                ΝΟΜΟΘΕΣΙΑ
-            </th>
-        </tr>
-                </thead>
-                <tbody className="w-95 max-h-[calc(89%-0.8rem)] bg-white-50 m-2 rounded-lg overflow-auto border border-gray-300 py-2 px-4">
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">Νόμος 3029/2002:</span> Ιδρυτικός νόμος Ταμείων Επαγγελματικής ασφάλισης
-                        </td>
-                        <td><a href="https://www.teaapl.gr/images/pdf/nomothesia/2002%20%CE%A6%CE%95%CE%9A%20160%20%CE%91%2011_07_2002_%CE%9D%203029%20%CE%91%CE%A1%CE%98%CE%A1%CE%91%2007%20%CE%BA%CE%B1%CE%B9%2008.pdf" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-24 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a></td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">Οδηγία 2003/41/ΕΚ:</span> Για τις δραστηριότητες και την εποπτεία των ιδρυµάτων που προσφέρουν υπηρεσίες επαγγελματικών συνταξιοδοτικών παροχών
-                        </td>
-                        <td>
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/2003%20%CE%9F%CE%94%CE%97%CE%93%CE%99%CE%91%2041%20_%202003%20%CE%95%CE%A5%CE%A1%CE%A9%CE%A0%CE%91%CE%99%CE%9A%CE%97%20%CE%9F%CE%94%CE%97%CE%93%CE%99%CE%91.PDF" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">Αρίθ.Φ.Επαγ.ασφ./οικ.16:</span> Όροι λειτουργίας των Ταμείων Επαγγελματικής Ασφάλισης
-                        </td>
-                        <td>
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/2003%20%CE%A6%CE%95%CE%9A%20462%20%CE%92%2017_04_2003_%CE%A5%CE%91%20%CE%9F%CE%A1%CE%9F%CE%99%20%CE%9B%CE%95%CE%99%CE%A4%CE%9F%CE%A5%CE%A1%CE%93%CE%99%CE%91%CE%A3%20%CE%A4%CE%95%CE%91.PDF" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">Αρίθ.Φ.Επαγ.ασφ./43:</span> Διαδοχική Ασφάλιση σε Ταμεία Επαγγελματικής Ασφάλισης
-                        </td>
-                        <td>
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/2003%20%CE%A6%CE%95%CE%9A%201703%20%CE%92%2019_11_2003%20%CE%A5%CE%91%20%CE%94%CE%99%CE%91%CE%94%CE%9F%CE%A7%CE%99%CE%9A%CE%97%20%CE%A4%CE%95%CE%91.PDF" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">Νόμος 4172/2013:</span> Ρυθμίσεις Φορολογίας Εισοδήματος (στο άρθρο 14, παράγραφος 1, περίπτωση ε και στ, ορίζεται το αφορολόγητο των εισφορών και εφάπαξ παροχών για τα Ταμεία Επαγγελματικής Ασφάλισης)
-                        </td>
-                        <td>
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/2013%20%CE%A6%CE%95%CE%9A%20167%20%CE%91%2023%2007%202013%20%CE%9D_4172_2013%20%CE%91%CE%A1%CE%98%CE%A1%CE%9F%2014%20%CE%A0%CE%91%CE%A1%201%20%CE%A0%CE%95%CE%A1%20%CE%95%20%CE%A3%CE%A4%20%CE%A6%CE%9F%CE%A1%CE%9F%CE%91%CE%A0%CE%91%CE%9B%CE%9B%CE%91....pdf" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">Νόμος 4261/2014:</span> Στο άρθρο 180 περιγράφεται η εποπτεία των Ταμείων Επαγγελματικής Ασφάλισης από την Επιτροπή Κεφαλαιαγοράς
-                        </td>
-                        <td>
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/2014%20%CE%A6%CE%95%CE%9A%20107%20%CE%91%2005%2005%202014%204261%20%CE%91%CE%A1%CE%98%CE%A1%CE%9F180%20%CE%95%CE%A0%CE%99%CE%A4%CE%A1%CE%9F%CE%A0%CE%97%20%CE%9A%CE%95%CE%A6%CE%91%CE%9B%CE%91%CE%99%CE%91%CE%93%CE%9F%CE%A1%CE%91%CE%A3.PDF" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">Αριθ. Φ.51010/οικ.1893/15:</span> Κανονισμός Δεοντολογίας και Καλών Πρακτικών των Ταμείων Επαγγελματικής Ασφάλισης
-                        </td>
-                        <td>
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/2015%20%CE%A6%CE%95%CE%9A%20178%20%CE%92%2023-01-2015%20-%20%CE%9A%CE%B1%CE%BD%CE%BF%CE%BD%CE%B9%CF%83%CE%BC%CF%8C%CF%82%20%CE%94%CE%B5%CE%BF%CE%BD%CF%84%CE%BF%CE%BB%CE%BF%CE%B3%CE%AF%CE%B1%CF%82%20%CE%BA%CE%B1%CE%B9%20%CE%9A%CE%B1%CE%BB%CF%8E%CE%BD%20%CE%A0%CF%81%CE%B1%CE%BA%CF%84%CE%B9%CE%BA%CF%8E%CE%BD%20....pdf" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">ΠΟΛ 1088/17.04.2015:</span> Στη σελίδα 14, άρθρο 5, παράγραφος 7, περιγράφεται η τεκμηρίωση των καταβληθεισών εισφορών υπέρ Ταμείων Επαγγελματικής Ασφάλισης μέσω σχετικής βεβαίωσης.
-                        </td>
-                        <td>
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/%CE%A0%CE%9F%CE%9B%201088%2017.04.2015%20(%CE%91%CF%81%CE%B8%CF%81%CE%BF%205,%20%CF%80%CE%B1%CF%81%CE%AC%CE%B3%CF%81.7).pdf" target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10" ></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr className="border-b hover:bg-customBlue hover:text-white">
-                        <td className="text-left">
-                            <span className="underline">ΠΟΛ 1227/14.12.2018:</span> Φορολογική μεταχείριση εισφορών υπέρ Ταμείων Επαγγελματικής Ασφάλισης
-                        </td>
-                        <td> 
-                            <a href="https://www.teaapl.gr/images/pdf/nomothesia/pol1227_2018.pdf"  target="_blank">
-                            <a target="_blank" href="https://icons8.com/icon/l0vjMqIboTRs/pdf"></a><img src={PDF} className="w-20 h-10"></img><a target="_blank" href="https://icons8.com"></a>
-                            </a>
-                            </td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
-    
+            <section className="bg-white p-6 rounded-lg shadow-md  mt-20 ">
+                <h1 className="text-center text-2xl underline  text-customBlue mb-10">ΕΠΕΝΔΥΣΕΙΣ</h1>
+            <div className="text-left text-lg  px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5">
+                <p>Το Ταμείο επενδύει τα αποθεματικά του σύμφωνα με τη ρητή διάταξη του άρθρου 23 του Καταστατικού του Τ.Ε.Α.Α.Π.Λ., «Α. Για την κάλυψη του μαθηματικού αποθέματος με ασφαλιστική τοποθέτηση το Ταμείο επενδύει τα περιουσιακά του στοιχεία μέσω μιας ή περισσοτέρων δια χειριστικών εταιρειών. Β. Οι τοποθετήσεις του ενεργητικού του Ταμείου ακολουθούν τους ποσοτικούς επενδυτικούς περιορισμούς που προβλέπονται από το άρθρο 7 παράγραφος 15 του ν. 3029/2002 όπως αυτό αντικαταστάθηκε με το άρ. 12 του ν. 3385/2005 και όπως εκάστοτε ισχύει, κατ’ εφαρμογή της Φ Επαγ. Ασφ. Οικ. 16/9.4.2003 απόφασης του Υφυπουργού Απασχόλησης και Κοινωνικής Προστασίας και του Κοινοτικού Δικαίου όπως ενσωματώνεται στην Εθνική Νομοθεσία.»</p>
+            </div>
+            <div className="text-left text-lg  px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5">
+                <p>Μετά την 01/07/2016 το Τ.Ε.Α.Α.Π.Λ. σύμφωνα με το καταστατικό του επενδύει τα αποθεματικά του Κλάδου Εφάπαξ στο Αμοιβαίο Κεφάλαιο του Τ.Ε.Α.Α.Π.Λ., το οποίο έχει σχηματιστεί ειδικά για το σκοπό αυτό με την επωνυμία «ΤΕΑ ΑΣΤΥΝΟΜΙΚΩΝ ΠΥΡΟΣΒΕΣΤΩΝ ΛΙΜΕΝΙΚΩΝ MΙΚΤΟ (TAPLM)». Διαχειριστής του Αμοιβαίου Κεφαλαίου, μετά από διαδικασία επιλογής, έχει οριστεί η ALPHA TRUST.</p>
+            </div>
+            <div className="text-left text-lg  px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5">
+                <p>Μέχρι την 30/06/2016 τα αποθεματικά του Κλάδου Εφάπαξ επενδύονταν σε  Τραπεζικές Καταθέσεις, μικρής διάρκειας ομόλογα και έντοκα γραμμάτια.</p>
+            </div>
+            <div className="text-left text-lg  px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5">
+                <p>Το Ταμείο έχει ορίσει την ίδια εταιρεία ως Διαχειριστή και του Κλάδου Αλληλεγγύης, τα αποθεματικά του οποίου επενδύονται σε βραχυπρόθεσμες επενδύσεις, όπως Τραπεζικές Καταθέσεις, μικρής διάρκειας ομόλογα και άλλα προϊόντα περιορισμένου κινδύνου.</p>
+            </div>
+            <div className="text-left text-lg  px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5 mt-20">
+                <p>Παρακάτω ακολουθεί ανάλυση του ενεργητικού του Α/Κ του κλάδου εφάπαξ με την πιο πρόσφατη αποτίμηση:</p>
+            </div>
+            <h1 className="text-center text-2xl underline  text-customBlue mb-10 mt-10">ΤΕΑ Αστυνομικών-Πυροσβεστών-Λιμενικών Mικτό</h1>
+            <div >
+                <div class=" py-16">
+                    <div class="container mx-auto px-4">
+                        <div class="flex flex-wrap justify-between items-center mb-12">
+                            <h3 class="text-center sm:text-left pb-0 text-2xl sm:text-3xl leading-tight m-0 mb-4 pt-0 font-semibold text-customBlue">ΤΕΑ Αστυνομικών-Πυροσβεστών-Λιμενικών Mικτό</h3>
+                            </div>
+                            <div class="flex flex-wrap justify-around">
+                                <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
+                                    <div class="text-black text-5xl mb-4"><i class="fa-solid fa-coins"></i></div>
+                                    <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">30.118.362,54 €	</h2>
+                                    <h3 class="text-white text-opacity-80">Καθαρό Ενεργητικό</h3>
+                                    </div>
+                                    <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
+                                        <div class="text-black text-5xl mb-4"><i class="fa-solid fa-chart-pie"></i></div>
+                                        <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">2.275.677,379 €</h2>
+                                        <h3 class="text-white text-opacity-80">Αριθμός Μεριδίων</h3>
+                                        </div>
+                                        <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
+                                            <div class="text-black text-5xl mb-4"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                            <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">13,2349 €</h2>
+                                            <h3 class="text-white text-opacity-80">Καθαρή τιμή μεριδίου</h3>
+                                            </div>
+                                            <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
+                                                <div class="text-black text-5xl mb-4"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                                                <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">0,29%</h2>
+                                                <h3 class="text-white text-opacity-80">Ημερήσια % μεταβολή</h3>
+                                                </div>
+                                                <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
+                                                <div class="text-black text-5xl mb-4"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                                                <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">6,56%</h2>
+                                                <h3 class="text-white text-opacity-80">Μεταβολή από αρχή του έτους έως ημ. Αποτίμησης</h3>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+            </div>
+            <div>
+                <a href="https://www.naftemporiki.gr/amoivaia/?id=TAPLM.MTF" target="_blank" ><p className="text-left text-2xl underline  text-customBlue mb-10">Δείτε εδώ την ημερήσια εξέλιξη της τιμής του αμοιβαίου κεφαλαίου:</p>
+                <img src={Kefailaio}></img></a>
+
+            </div>
+            </section>
+
+
+
+
             <div class="bg-[#071923] text-white text-xs p-4 text-center w-full font-poppins text-base leading-7 font-normal">© teaapl.gr 2023 | Developed by <a class="text-custom-new-blue" href="">SOFTBIZ</a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="inline-block ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm-160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm194.8 170.2C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.6-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.4-16.2 38.1 4.2 24.6 20.5z"></path></svg></div>
+    <button class="fixed bottom-10 right-10 z-50 bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none hover:bg-blue-600" title="Back to top">↑</button>    
         </div>
      );
 }
  
-export default Nomothesia;
+export default Oikonomika;

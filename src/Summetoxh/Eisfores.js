@@ -125,7 +125,7 @@ const Eisfores = () => {
                         </thead>
                     <tbody className="w-95 max-h-[calc(89%-0.8rem)] bg-white-50 m-2 rounded-lg overflow-auto border border-gray-300 py-2 px-4">
 
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Α</td>
 <td>30,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -135,7 +135,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
@@ -145,7 +145,7 @@ const Eisfores = () => {
 <td>&nbsp;</td>
 <td>23,97 €</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Β</td>
 <td>40,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -155,7 +155,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
@@ -165,7 +165,7 @@ const Eisfores = () => {
 <td>&nbsp;</td>
 <td>33,37 €</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Γ</td>
 <td>50,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -175,7 +175,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
@@ -185,7 +185,7 @@ const Eisfores = () => {
 <td>&nbsp;</td>
 <td>42,77 €</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Δ</td>
 <td>60,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -195,7 +195,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
@@ -205,7 +205,7 @@ const Eisfores = () => {
 <td>&nbsp;</td>
 <td>52,17 €</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Ε</td>
 <td>70,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -215,7 +215,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
@@ -225,7 +225,7 @@ const Eisfores = () => {
 <td>&nbsp;</td>
 <td>61,57 €</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>ΣΤ</td>
 <td>80,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -235,7 +235,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
@@ -245,7 +245,7 @@ const Eisfores = () => {
 <td>&nbsp;</td>
 <td>70,97 €</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Ζ</td>
 <td>90,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -255,7 +255,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
@@ -265,7 +265,7 @@ const Eisfores = () => {
 <td>&nbsp;</td>
 <td>80,37 €</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>Η</td>
 <td>100,00 €</td>
 <td>Αλληλεγγύης</td>
@@ -275,7 +275,7 @@ const Eisfores = () => {
 <td>4,23 €</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
+<tr className="hover:bg-customBlue hover:text-white">
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Εφάπαξ</td>
