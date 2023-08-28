@@ -73,7 +73,7 @@ const Analogistikes = () => {
     </header>
             <section className="mt-10 mb-10 flex justify-center items-center min-h-screen bg-white-100">
             <table className="w-1/2 max-w-2xl mx-auto bg-white border-collapse border border-gray-300 mt-20">
-                <thead className="text-xl font-bold text-customBlue p-4 text-lg leading-10  border-b-2 border-customBlue pb-2 bg-customBlue text-white">
+                <thead className="sticky top-16 z-10  text-xl font-bold text-customBlue p-4 text-lg leading-10  border-b-2 border-customBlue pb-2 bg-customBlue text-white">
                    <tr className="border-b">
             <th className="text-center py-2 pl-2" colSpan="2">
                 ΑΝΑΛΟΓΙΣΤΙΚΕΣ ΜΕΛΕΤΕΣ
