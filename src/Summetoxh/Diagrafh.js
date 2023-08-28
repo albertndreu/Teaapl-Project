@@ -70,8 +70,8 @@ const Diagrafh = () => {
                                                         </nav>
     </header>
 <section >
-    <h1 className="text-center text-2xl underline font-bold text-customBlue mt-20 ">ΔΙΑΓΡΑΦΗ</h1>
-    <h2 className="text-center text-xl underline font-bold text-customBlue mt-20 ">Διαγραφή μέλους από το Ταμείο επέρχεται στις ακόλουθες περιπτώσεις:</h2>
+    <h1 className="text-center text-2xl underline font-bold text-customBlue mt-24 ">ΔΙΑΓΡΑΦΗ</h1>
+    <h2 className="text-center text-xl underline font-bold text-customBlue mt-14 ">Διαγραφή μέλους από το Ταμείο επέρχεται στις ακόλουθες περιπτώσεις:</h2>
     <div className="mt-20">
     <div className="mb-6 p-4 ml-4 mr-4 rounded-lg shadow-md border border-blue-400">
         <p className="text-left text-xl text-gray-700 mb-2">

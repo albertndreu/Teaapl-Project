@@ -93,9 +93,9 @@ const [isFired, setIsFired] = useState(false);
                                                         </div>
                                                         </nav>
     </header>
-        <main className="table">
+        <main className="custom-left custom-top">
             <section className="table_header">
-                <h1 className="text-2xl text-gray-700 border-4 border-black p-4 m-0">ΑΝΤΙΠΡΟΣΩΠΟΙ ΑΝΑ ΝΟΜΟ</h1>
+                <h1 className="text-2xl text-customBlue p-4 m-0 mt-20">ΑΝΤΙΠΡΟΣΩΠΟΙ ΑΝΑ ΝΟΜΟ</h1>
             </section>
             <section className="table_body">
                 

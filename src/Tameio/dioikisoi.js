@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,6 +11,7 @@ const Dioikisoi = () => {
     const [isParagraphVisible1, setIsParagraphVisible1] = useState(false);
     const [isParagraphVisible2, setIsParagraphVisible2] = useState(false);
     const [isParagraphVisible3, setIsParagraphVisible3] = useState(false);
+    
     useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -29,6 +30,103 @@ const Dioikisoi = () => {
   const ReadMore3 = () => {
     setIsParagraphVisible3(!isParagraphVisible3);
   };
+  const Popup = ({ isVisible, onClose }) => {
+  const handleOutsideClick = (event) => {
+    const popup = document.querySelector('.popup');
+    if (isVisible && popup && !popup.contains(event.target)) {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('mousedown', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [isVisible, onClose]);
+
+  if (!isVisible) {
+    return null;
+  }
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      {isParagraphVisible && (
+      <div className="popup bg-white rounded-lg shadow-md p-8 mt-20  w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
+        <button onClick={(ReadMore)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
+            <h1 className="name">Τσαγανός Ιωάννης</h1>
+            <p className="additional-text">Αντιπρόεδρος</p>
+        <p className="">
+          Γεννήθηκε στη Θεσσαλονίκη το έτος 1980.
+Αποφοίτησε από το Γενικό Λύκειο Νέας Τρίγλιας Χαλκιδικής το έτος 1997.
+Κατατάχθηκε στο Σώμα της ΕΛ.ΑΣ. το έτος 1998 και αποφοίτησε από τη Σχολή Αστυφυλάκων το έτος 2000.
+Είναι πτυχιούχος Οικονομικών Επιστημών του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης του Τμήματος Νομικών Οικονομικών και Πολιτικών Επιστημών.
+Κάτοχος πτυχίου καλής γνώσης Αγγλικής γλώσσας επιπέδου Certificate of Competency in English του University oF Michigan.
+Κάτοχος άδειας λογιστή – φοροτεχνικού και άδειας ασκήσεως οικονομολογικού επαγγέλματος.
+Έχει υπηρετήσει σε διάφορες Υπηρεσίες της Διεύθυνσης Αστυνομίας Χαλκιδικής και από το έτος 2007 έχει οριστεί Διαχειριστής Χρηματικού – Υλικού (Δημόσιος Υπόλογος) της Διεύθυνσης Αστυνομίας Χαλκιδικής.
+Είναι έγγαμος και πατέρας τριών (3) τέκνων.
+        </p> 
+      </div>
+      )
+      }
+        {isParagraphVisible1 && (
+       <div className="popup bg-white rounded-lg shadow-md p-8 mt-20  w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
+        <button onClick={(ReadMore1)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
+            <h1 className="name">Αρζιμάνογλου Μιχαήλ</h1>
+            <p className="additional-text">Γενικός Γραμματέας</p>
+        <p className="">
+           Γεννήθηκε στoν Κορυδαλλό Αττικής το1979.
+Αποφοίτησε από σχολή Αστυφυλάκων το 1998, από τη Σχολή διοίκησης και Οικονομίας Τμ. Λογιστικής του ΤΕΙ Πειραιά το 2011.
+Είναι κάτοχος πιστοποιητικού γνώσης χειρισμού Η/Υ και μεταξύ άλλων έχει συμμετάσχει σε σεμινάρια του Εθνικού Κέντρου Δημόσιας Διοίκησης τόσο σε θεματικές ενότητες Οικονομικού περιεχομένου όσο και δικτύων Ηλεκτρονικών υπολογιστών.
+Γνωρίζει την Αγγλική γλώσσα σε επίπεδο B2 (Lower)
+Από το 2009 ως σήμερα υπηρετεί ως λογιστής στο Τ.Ε.Α.Π.Α.Σ.Α.
+Είναι έγγαμος και πατέρας δύο παιδιών.
+        </p> 
+      </div>
+      )
+      }
+      {isParagraphVisible2 && (
+       <div className="popup bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
+            <button onClick={(ReadMore2)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
+            <h1 className="name">Λίτσιος Απόστολος</h1>
+            <p className="additional-text">Οργανωτικός Γραμματέας</p>
+        <p className="">
+          Γεννήθηκε στην Κοζάνη το έτος 1968.
+Είναι απόφοιτος Λυκείου.
+Κάτοχος πιστοποιητικού γνώσης χειρισμού Η/Υ (CAMBRIDGE).
+Προσλήφθηκε στην Ελληνική Αστυνομία τον Ιούνιο του 1993 και έχει υπηρετήσει σε υπηρεσίες της Αθήνας, της Καστοριάς και της Κοζάνης.
+Παρακολούθησε αρκετά σεμινάρια, υπηρεσιακά και μη και μεταξύ αυτών τα εξειδικευμένα: «Επενδύσεις για μη Οικονομικούς» και «Εκτίμηση Κινδύνου – Στρατηγική ανάλυση»
+Σήμερα ανήκει στη δύναμη της Τροχαίας Κοζάνης και είναι αποσπασμένος στο Τ.Π.Π.Π.
+Είναι έγγαμος και πατέρας τεσσάρων παιδιών.
+        </p> 
+        </div> 
+      )
+      }
+      {isParagraphVisible3 && (
+       <div className="popup bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
+            <button onClick={(ReadMore3)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
+            <h1 className="name">Αθανασίου Παναγιώτης</h1>
+            <p className="additional-text">Μέλος</p>
+        <p className="">
+          Γεννήθηκε στην Αθήνα το έτος 1979.
+Είναι απόφοιτος της Σχολής Αστυφυλάκων, στην οποία εισήχθη με το σύστημα των Πανελλαδικών Εξετάσεων το έτος 1998.
+Έχει υπηρετήσει σε μάχιμες υπηρεσίες των Νομών Αττικής και Θεσπρωτίας.
+Από το έτος 2014 υπηρετεί στο Επιτελείο της Διεύθυνσης Αστυνομίας Θεσπρωτίας.
+Έχει παρακολουθήσει πλήθος εκπαιδεύσεων και σεμιναρίων, τόσο μέσω των Σχολών Μετεκπαίδευσης και Επιμόρφωσης της Ελληνικής Αστυνομίας, όσο και Δημόσιων - Ιδιωτικών Φορέων, σε οικονομικά - κοινωνικά θέματα, μεταξύ των οποίων «Επενδύσεις για μη Οικονομικούς» και «Εκτίμηση Κινδύνου – Στρατηγική ανάλυση».
+        </p> 
+        </div>
+      )
+      }
+        </div> 
+   
+    
+  );
+ 
+};
+
+
+ 
   
 
     return ( 
@@ -102,118 +200,63 @@ const Dioikisoi = () => {
                                                         </nav>
     </header>
     <section>
-        <h1 className="absolute left-80 top-20 text-3xl font-bold text-customBlue border-b-2 border-customBlue pb-2">ΔΙΟΙΚΗΣΗ:</h1>
-       <div className="flex flex-col items-center mt-20">
-    <div className="employee">
-        <h2 className="name">Γουσιας Θεόδωρος</h2>
+        <h1 className="absolute left-44 top-24 text-3xl font-bold text-customBlue border-b-2 border-customBlue pb-2">ΔΙΟΙΚΗΣΗ:</h1>
+       <div className="flex justify-center mt-24">
+       <div className="grid grid-cols-2 gap-4">
+    <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
+        <h2 className="name">Γούσιας Θεόδωρος</h2>
         <p className="additional-text">Πρόεδρος</p>
     </div>
-    <div className="employee">
-        <h2 className="name">Τσαγανος Ιωάννης</h2>
+    <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
+        <h2 className="name">Τσαγανός Ιωάννης</h2>
         <p className="additional-text">Αντιπρόεδρος</p>
         <button onClick={ReadMore} className="py-2 px-4 bg-blue-500 text-white rounded">Read More</button>
 
-        {isParagraphVisible && (
-<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center" >
-          <div className="bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
-            <button onClick={(ReadMore)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Τσαγανος Ιωάννης</h1>
-            <p className="additional-text">Αντιπρόεδρος</p>
-        <p className="">
-          Γεννήθηκε στη Θεσσαλονίκη το έτος 1980.
-Αποφοίτησε από το Γενικό Λύκειο Νέας Τρίγλιας Χαλκιδικής το έτος 1997.
-Κατατάχθηκε στο Σώμα της ΕΛ.ΑΣ. το έτος 1998 και αποφοίτησε από τη Σχολή Αστυφυλάκων το έτος 2000.
-Είναι πτυχιούχος Οικονομικών Επιστημών του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης του Τμήματος Νομικών Οικονομικών και Πολιτικών Επιστημών.
-Κάτοχος πτυχίου καλής γνώσης Αγγλικής γλώσσας επιπέδου Certificate of Competency in English του University oF Michigan.
-Κάτοχος άδειας λογιστή – φοροτεχνικού και άδειας ασκήσεως οικονομολογικού επαγγέλματος.
-Έχει υπηρετήσει σε διάφορες Υπηρεσίες της Διεύθυνσης Αστυνομίας Χαλκιδικής και από το έτος 2007 έχει οριστεί Διαχειριστής Χρηματικού – Υλικού (Δημόσιος Υπόλογος) της Διεύθυνσης Αστυνομίας Χαλκιδικής.
-Είναι έγγαμος και πατέρας τριών (3) τέκνων.
-        </p> 
-        </div> 
-        </div> 
+        {isParagraphVisible &&  (
+  <Popup isVisible={isParagraphVisible} onClose={() => setIsParagraphVisible(false)} />     
       )
       }
     </div>
-    <div className="employee">
-        <h2 className="name">Αρζιμανογλου Μιχαήλ</h2>
-        <p className="additional-text">Γεν. Γραμματέας</p>
+    <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
+        <h2 className="name">Αρζιμάνογλου Μιχαήλ</h2>
+        <p className="additional-text">Γενικός Γραμματέας</p>
         <button onClick={ReadMore1} className="py-2 px-4 bg-blue-500 text-white rounded">Read More</button>
         {isParagraphVisible1 && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center" >
-          <div className="bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
-            <button onClick={(ReadMore1)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Αρζιμανογλου Μιχαήλ</h1>
-            <p className="additional-text">Γεν. Γραμματέας</p>
-        <p className="">
-          Γεννήθηκε στoν Κορυδαλλό Αττικής το1979.
-Αποφοίτησε από σχολή Αστυφυλάκων το 1998, από τη Σχολή διοίκησης και Οικονομίας Τμ. Λογιστικής του ΤΕΙ Πειραιά το 2011.
-Είναι κάτοχος πιστοποιητικού γνώσης χειρισμού Η/Υ και μεταξύ άλλων έχει συμμετάσχει σε σεμινάρια του Εθνικού Κέντρου Δημόσιας Διοίκησης τόσο σε θεματικές ενότητες Οικονομικού περιεχομένου όσο και δικτύων Ηλεκτρονικών υπολογιστών.
-Γνωρίζει την Αγγλική γλώσσα σε επίπεδο B2 (Lower)
-Από το 2009 ως σήμερα υπηρετεί ως λογιστής στο Τ.Ε.Α.Π.Α.Σ.Α.
-Είναι έγγαμος και πατέρας δύο παιδιών.
-        </p> 
-        </div> 
-        </div> 
+       <Popup isVisible={isParagraphVisible1} onClose={() => setIsParagraphVisible1(false)} />
       )
       }
     </div>
-    <div className="employee">
-        <h2 className="name">Λιτσιος Απόστολος</h2>
-        <p className="additional-text">Οργαν. Γραμματέας</p>
-        <button onClick={ReadMore2} className="py-2 px-4 bg-blue-500 text-white rounded">Read More</button>
+    <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
+        <h2 className="name">Λίτσιος Απόστολος</h2>
+        <p className="additional-text">Οργανωτικός Γραμματέας</p>
+        <button onClick={ReadMore2} className="py-2 px-4 bg-blue-500 text-white rounded mt-8">Read More</button>
         {isParagraphVisible2 && (
-<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center" >
-          <div className="bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
-            <button onClick={(ReadMore2)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Λιτσιος Απόστολος</h1>
-            <p className="additional-text">Οργαν. Γραμματέας</p>
-        <p className="">
-          Γεννήθηκε στην Κοζάνη το έτος 1968.
-Είναι απόφοιτος Λυκείου.
-Κάτοχος πιστοποιητικού γνώσης χειρισμού Η/Υ (CAMBRIDGE).
-Προσλήφθηκε στην Ελληνική Αστυνομία τον Ιούνιο του 1993 και έχει υπηρετήσει σε υπηρεσίες της Αθήνας, της Καστοριάς και της Κοζάνης.
-Παρακολούθησε αρκετά σεμινάρια, υπηρεσιακά και μη και μεταξύ αυτών τα εξειδικευμένα: «Επενδύσεις για μη Οικονομικούς» και «Εκτίμηση Κινδύνου – Στρατηγική ανάλυση»
-Σήμερα ανήκει στη δύναμη της Τροχαίας Κοζάνης και είναι αποσπασμένος στο Τ.Π.Π.Π.
-Είναι έγγαμος και πατέρας τεσσάρων παιδιών.
-        </p> 
-        </div> 
-        </div> 
+          <Popup isVisible={isParagraphVisible2} onClose={() => setIsParagraphVisible2(false)} />
+ 
       )
       }
     </div>
-    <div className="employee">
-        <h2 className="name">Συρσυρης Φώτιος</h2>
+    <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
+        <h2 className="name">Σύρσυρης Φώτιος</h2>
         <p className="additional-text">Διαχειριστής</p>
     </div>
-    <div className="employee">
-        <h2 className="name">Αθανασιου Παναγιώτης</h2>
+    <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
+        <h2 className="name">Αθανασίου Παναγιώτης</h2>
         <p className="additional-text">Μέλος</p>
         <button onClick={ReadMore3} className="py-2 px-4 bg-blue-500 text-white rounded">Read More</button>
         {isParagraphVisible3 && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center" >
-          <div className="bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
-            <button onClick={(ReadMore3)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Αθανασιου Παναγιώτης</h1>
-            <p className="additional-text">Μέλος</p>
-        <p className="">
-          Γεννήθηκε στην Αθήνα το έτος 1979.
-Είναι απόφοιτος της Σχολής Αστυφυλάκων, στην οποία εισήχθη με το σύστημα των Πανελλαδικών Εξετάσεων το έτος 1998.
-Έχει υπηρετήσει σε μάχιμες υπηρεσίες των Νομών Αττικής και Θεσπρωτίας.
-Από το έτος 2014 υπηρετεί στο Επιτελείο της Διεύθυνσης Αστυνομίας Θεσπρωτίας.
-Έχει παρακολουθήσει πλήθος εκπαιδεύσεων και σεμιναρίων, τόσο μέσω των Σχολών Μετεκπαίδευσης και Επιμόρφωσης της Ελληνικής Αστυνομίας, όσο και Δημόσιων - Ιδιωτικών Φορέων, σε οικονομικά - κοινωνικά θέματα, μεταξύ των οποίων «Επενδύσεις για μη Οικονομικούς» και «Εκτίμηση Κινδύνου – Στρατηγική ανάλυση».
-        </p> 
-        </div> 
-        </div> 
+          <Popup isVisible={isParagraphVisible3} onClose={() => setIsParagraphVisible3(false)} /> 
       )
       }
     </div>
-    <div className="employee">
-        <h2 className="name">Βλαχοπουλος Κωνσταντίνος</h2>
+    <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
+        <h2 className="name">Βλαχόπουλος Κωνσταντίνος</h2>
         <p className="additional-text">Μέλος </p>
     </div>
     <p>
       <br></br>
     </p>
+        </div>
         </div>
 <div className="flex flex-col items-center">
   <table>
@@ -227,15 +270,15 @@ const Dioikisoi = () => {
 <tbody className="border border-gray-300">
 <tr className="hover:bg-customBlue hover:text-white">
 <td>Πρόεδρος</td>
-<td>Μαυρογιωργος Σωκράτης</td>
+<td>Μαυρογιώργος Σωκράτης</td>
 </tr>
 <tr className="hover:bg-customBlue hover:text-white">
 <td>Μέλος</td>
-<td>Μινογιαννης Κοσμάς</td>
+<td>Μινογιάννης Κοσμάς</td>
 </tr>
 <tr className="hover:bg-customBlue hover:text-white">
 <td>Μέλος</td>
-<td>Παπουλιας Μιχαήλ</td>
+<td>Παπούλιας Μιχαήλ</td>
 </tr>
 </tbody>
 </table>

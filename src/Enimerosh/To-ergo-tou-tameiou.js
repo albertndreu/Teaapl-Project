@@ -111,8 +111,8 @@ const Ergo = () => {
                                                         </div>
                                                         </nav>
     </header>
-<h1 className="text-center text-3xl underline font-bold text-customBlue mt-20 mb-10">Το έργο του Ταμείου</h1>
-    <div className="mx-auto bg-white  rounded-lg  p-4 grid lg:grid-cols-5 lg:gap-8 mb-10 mt-20 ml-10">
+<h1 className="text-center text-3xl underline font-bold text-customBlue mt-24 ">Το έργο του Ταμείου</h1>
+    <div className="mx-auto bg-white  rounded-lg  p-4 grid lg:grid-cols-5 lg:gap-8 mb-10 mt-10 ml-10">
         <div className="border">
         <a href="https://teaapl.gr/images/epistoles/%CE%91%CE%9D%CE%95%CE%A3%CE%A4%CE%97%20%CE%91%CE%A1%CE%93%CE%A5%CE%A1%CE%A9.jpg" target="_blank"><p className="text-left text-customBlue underline text-1xl font-semibold ">ΑΝΕΣΤΗ ΑΡΓΥΡΩ</p><img src={Anesti}></img></a>
         </div>

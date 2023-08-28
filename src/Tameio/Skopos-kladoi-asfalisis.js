@@ -9,7 +9,7 @@ const Skopos = () => {
     AOS.refresh();
   }, []);
     return ( 
-        <div>
+        <div >
             
                 <header>
         <nav class="bg-white shadow fixed top-0 left-0 w-full z-50">

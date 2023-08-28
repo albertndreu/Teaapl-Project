@@ -96,36 +96,36 @@ useEffect(() => {
             <div className="text-left text-lg  px-6 py-4 rounded-lg shadow-md border-l-4 border-blue-500 mb-5 mt-20">
                 <p>Παρακάτω ακολουθεί ανάλυση του ενεργητικού του Α/Κ του κλάδου εφάπαξ με την πιο πρόσφατη αποτίμηση:</p>
             </div>
-            <h1 className="text-center text-2xl underline  text-customBlue mb-10 mt-10">ΤΕΑ Αστυνομικών-Πυροσβεστών-Λιμενικών Mικτό</h1>
+            
             <div >
                 <div class=" py-16">
                     <div class="container mx-auto px-4">
                         <div class="flex flex-wrap justify-between items-center mb-12">
-                            <h3 class="text-center sm:text-left pb-0 text-2xl sm:text-3xl leading-tight m-0 mb-4 pt-0 font-semibold text-customBlue">ΤΕΑ Αστυνομικών-Πυροσβεστών-Λιμενικών Mικτό</h3>
+                            <h3 class="underline text-center sm:text-left pb-0 text-2xl sm:text-3xl leading-tight m-0 mb-4 pt-0 font-semibold text-customBlue">ΤΕΑ Αστυνομικών-Πυροσβεστών-Λιμενικών Mικτό</h3>
                             </div>
                             <div class="flex flex-wrap justify-around">
                                 <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
-                                    <div class="text-black text-5xl mb-4"><i class="fa-solid fa-coins"></i></div>
+                                    <div class="text-yellow-500 text-5xl mb-4"><i class="fa-solid fa-coins"></i></div>
                                     <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">30.118.362,54 €	</h2>
                                     <h3 class="text-white text-opacity-80">Καθαρό Ενεργητικό</h3>
                                     </div>
                                     <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
-                                        <div class="text-black text-5xl mb-4"><i class="fa-solid fa-chart-pie"></i></div>
+                                        <div class="text-gray-500 text-5xl mb-4"><i class="fa-solid fa-chart-pie"></i></div>
                                         <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">2.275.677,379 €</h2>
                                         <h3 class="text-white text-opacity-80">Αριθμός Μεριδίων</h3>
                                         </div>
                                         <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
-                                            <div class="text-black text-5xl mb-4"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                            <div class="text-purple-400 text-5xl mb-4"><i class="fa-solid fa-hand-holding-dollar"></i></div>
                                             <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">13,2349 €</h2>
                                             <h3 class="text-white text-opacity-80">Καθαρή τιμή μεριδίου</h3>
                                             </div>
                                             <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
-                                                <div class="text-black text-5xl mb-4"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                                                <div class="text-green-400 text-5xl mb-4"><i class="fa-solid fa-money-bill-transfer"></i></div>
                                                 <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">0,29%</h2>
                                                 <h3 class="text-white text-opacity-80">Ημερήσια % μεταβολή</h3>
                                                 </div>
                                                 <div class="transform transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-lg shadow-2xl m-4">
-                                                <div class="text-black text-5xl mb-4"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                                                <div class="text-green-500 text-5xl mb-4"><i class="fa-solid fa-money-bill-trend-up"></i></div>
                                                 <h2 class="text-white text-3xl font-bold mb-2 font-sans text-rendering-optimizeLegibility leading-none tracking-normal">6,56%</h2>
                                                 <h3 class="text-white text-opacity-80">Μεταβολή από αρχή του έτους έως ημ. Αποτίμησης</h3>
                                                 </div>

@@ -70,8 +70,8 @@ const Eisfores = () => {
                                                         </nav>
     </header>
     <section>
-        <h1 className="text-center text-2xl underline font-bold text-customBlue mt-20">ΕΙΣΦΟΡΕΣ</h1>
-        <body class=" p-4 mt-20 text-1xl">
+        <h1 className="text-center text-2xl underline font-bold text-customBlue mt-24">ΕΙΣΦΟΡΕΣ</h1>
+        <body class=" p-4 mt-10 text-1xl">
     <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <div class="flex-1 p-4 rounded-lg shadow-md border border-blue-400">
             
@@ -101,7 +101,7 @@ const Eisfores = () => {
     </div>
     
 </body>
-<main className="table mr-40">
+<main className="table ml-16 mt-10">
             <section className="text-center bg-gray-300 p-5">
                 <h1 className="text-2xl text-gray-700 border-4 border-black p-4 m-0">ΕΝΔΕΙΚΤΙΚΟΣ ΠΙΝΑΚΑΣ ΚΛΑΣΕΩΣ ΕΙΣΦΟΡΩΝ</h1>
                 <hr class="my-6 border-t-2 border-gray-700"></hr>

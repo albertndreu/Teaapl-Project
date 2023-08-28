@@ -71,9 +71,8 @@ const Isologismoi = () => {
                                                         </div>
                                                         </nav>
     </header>
-    <main className="table">
-            <h1 className="text-center text-2xl underline font-bold text-customBlue  mb-10">ΙΣΟΛΟΓΙΣΜΟΙ</h1>
-
+    <h1 className="text-center text-3xl underline font-bold text-customBlue mt-24 ">ΙΣΟΛΟΓΙΣΜΟΙ</h1>
+    <main className="custom-left custom-top">
             <section className="table_body ">
                 <table className="w-full border-collapse">
                     <thead className="sticky top-16 z-10 bg-customBlue text-white">
