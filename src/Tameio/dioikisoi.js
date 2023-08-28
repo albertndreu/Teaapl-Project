@@ -55,8 +55,8 @@ const Dioikisoi = () => {
       {isParagraphVisible && (
       <div className="popup bg-white rounded-lg shadow-md p-8 mt-20  w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
         <button onClick={(ReadMore)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Τσαγανός Ιωάννης</h1>
-            <p className="additional-text">Αντιπρόεδρος</p>
+            <h1 className="m-0 text-2xl text-customBlue">Τσαγανός Ιωάννης</h1>
+            <p className="mt-2 text-customBlue text-sm">Αντιπρόεδρος</p>
         <p className="">
           Γεννήθηκε στη Θεσσαλονίκη το έτος 1980.
 Αποφοίτησε από το Γενικό Λύκειο Νέας Τρίγλιας Χαλκιδικής το έτος 1997.
@@ -73,8 +73,8 @@ const Dioikisoi = () => {
         {isParagraphVisible1 && (
        <div className="popup bg-white rounded-lg shadow-md p-8 mt-20  w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
         <button onClick={(ReadMore1)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Αρζιμάνογλου Μιχαήλ</h1>
-            <p className="additional-text">Γενικός Γραμματέας</p>
+            <h1 className="m-0 text-2xl text-customBlue">Αρζιμάνογλου Μιχαήλ</h1>
+            <p className="mt-2 text-customBlue text-sm">Γενικός Γραμματέας</p>
         <p className="">
            Γεννήθηκε στoν Κορυδαλλό Αττικής το1979.
 Αποφοίτησε από σχολή Αστυφυλάκων το 1998, από τη Σχολή διοίκησης και Οικονομίας Τμ. Λογιστικής του ΤΕΙ Πειραιά το 2011.
@@ -89,8 +89,8 @@ const Dioikisoi = () => {
       {isParagraphVisible2 && (
        <div className="popup bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
             <button onClick={(ReadMore2)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Λίτσιος Απόστολος</h1>
-            <p className="additional-text">Οργανωτικός Γραμματέας</p>
+            <h1 className="m-0 text-2xl text-customBlue">Λίτσιος Απόστολος</h1>
+            <p className="mt-2 text-customBlue text-sm">Οργανωτικός Γραμματέας</p>
         <p className="">
           Γεννήθηκε στην Κοζάνη το έτος 1968.
 Είναι απόφοιτος Λυκείου.
@@ -106,8 +106,8 @@ const Dioikisoi = () => {
       {isParagraphVisible3 && (
        <div className="popup bg-white rounded-lg shadow-md p-8 mt-20 w-100 max-w-md" data-aos="zoom-in" data-aos-duration="1000">
             <button onClick={(ReadMore3)} className="py-1 px-3  text-customBlue rounded absolute top-0 right-0">X</button>
-            <h1 className="name">Αθανασίου Παναγιώτης</h1>
-            <p className="additional-text">Μέλος</p>
+            <h1 className="m-0 text-2xl text-customBlue">Αθανασίου Παναγιώτης</h1>
+            <p className="mt-2 text-customBlue text-sm">Μέλος</p>
         <p className="">
           Γεννήθηκε στην Αθήνα το έτος 1979.
 Είναι απόφοιτος της Σχολής Αστυφυλάκων, στην οποία εισήχθη με το σύστημα των Πανελλαδικών Εξετάσεων το έτος 1998.
@@ -204,12 +204,12 @@ const Dioikisoi = () => {
        <div className="flex justify-center mt-24">
        <div className="grid grid-cols-2 gap-4">
     <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
-        <h2 className="name">Γούσιας Θεόδωρος</h2>
-        <p className="additional-text">Πρόεδρος</p>
+        <h2 className="m-0 text-2xl text-customBlue">Γούσιας Θεόδωρος</h2>
+        <p className="mt-2 text-customBlue text-sm">Πρόεδρος</p>
     </div>
     <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
-        <h2 className="name">Τσαγανός Ιωάννης</h2>
-        <p className="additional-text">Αντιπρόεδρος</p>
+        <h2 className="m-0 text-2xl text-customBlue">Τσαγανός Ιωάννης</h2>
+        <p className="mt-2 text-customBlue text-sm">Αντιπρόεδρος</p>
         <button onClick={ReadMore} className="py-2 px-4 bg-blue-500 text-white rounded">Read More</button>
 
         {isParagraphVisible &&  (
@@ -218,17 +218,17 @@ const Dioikisoi = () => {
       }
     </div>
     <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
-        <h2 className="name">Αρζιμάνογλου Μιχαήλ</h2>
-        <p className="additional-text">Γενικός Γραμματέας</p>
-        <button onClick={ReadMore1} className="py-2 px-4 bg-blue-500 text-white rounded">Read More</button>
+        <h2 className="m-0 text-2xl text-customBlue mb-5">Αρζιμάνογλου Μιχαήλ</h2>
+        <p className=" text-customBlue text-sm">Γενικός Γραμματέας</p>
+        <button onClick={ReadMore1} className="py-2 px-4 mt-9 bg-blue-500 text-white rounded">Read More</button>
         {isParagraphVisible1 && (
        <Popup isVisible={isParagraphVisible1} onClose={() => setIsParagraphVisible1(false)} />
       )
       }
     </div>
     <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
-        <h2 className="name">Λίτσιος Απόστολος</h2>
-        <p className="additional-text">Οργανωτικός Γραμματέας</p>
+        <h2 className="m-0 text-2xl text-customBlue">Λίτσιος Απόστολος</h2>
+        <p className="mt-2 text-customBlue text-sm">Οργανωτικός Γραμματέας</p>
         <button onClick={ReadMore2} className="py-2 px-4 bg-blue-500 text-white rounded mt-8">Read More</button>
         {isParagraphVisible2 && (
           <Popup isVisible={isParagraphVisible2} onClose={() => setIsParagraphVisible2(false)} />
@@ -237,12 +237,12 @@ const Dioikisoi = () => {
       }
     </div>
     <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
-        <h2 className="name">Σύρσυρης Φώτιος</h2>
-        <p className="additional-text">Διαχειριστής</p>
+        <h2 className="m-0 text-2xl text-customBlue">Σύρσυρης Φώτιος</h2>
+        <p className="mt-2 text-customBlue text-sm">Διαχειριστής</p>
     </div>
     <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
-        <h2 className="name">Αθανασίου Παναγιώτης</h2>
-        <p className="additional-text">Μέλος</p>
+        <h2 className="m-0 text-2xl text-customBlue">Αθανασίου Παναγιώτης</h2>
+        <p className="mt-2 text-customBlue text-sm">Μέλος</p>
         <button onClick={ReadMore3} className="py-2 px-4 bg-blue-500 text-white rounded">Read More</button>
         {isParagraphVisible3 && (
           <Popup isVisible={isParagraphVisible3} onClose={() => setIsParagraphVisible3(false)} /> 
@@ -250,15 +250,10 @@ const Dioikisoi = () => {
       }
     </div>
     <div className="bg-white rounded-lg shadow-md p-12 mb-15 w-4/5 max-w-md">
-        <h2 className="name">Βλαχόπουλος Κωνσταντίνος</h2>
-        <p className="additional-text">Μέλος </p>
+        <h2 className="m-0 text-2xl text-customBlue">Βλαχόπουλος Κωνσταντίνος</h2>
+        <p className="mt-2 text-customBlue text-sm">Μέλος </p>
     </div>
-    <p>
-      <br></br>
-    </p>
-        </div>
-        </div>
-<div className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
   <table>
     <thead className="text-3xl font-bold text-customBlue p-4 text-lg leading-7  border-b-2 border-customBlue pb-2 cursor-pointer ">
       <tr>ΕΞΕΛΕΓΚΤΙΚΗ ΕΠΙΤΡΟΠΗ:</tr>
@@ -283,6 +278,12 @@ const Dioikisoi = () => {
 </tbody>
 </table>
 </div>
+    <p>
+      <br></br>
+    </p>
+        </div>
+        </div>
+
         </section>
 
     <div class="bg-[#071923] text-white text-xs p-4 text-center w-full font-poppins text-base leading-7 font-normal">© teaapl.gr 2023 | Developed by <a class="text-custom-new-blue" href="">SOFTBIZ</a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="inline-block ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm-160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm194.8 170.2C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.6-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.4-16.2 38.1 4.2 24.6 20.5z"></path></svg></div>

@@ -63,18 +63,9 @@ button:hover .fill-effect {
   max-width: 400px;
 }
 
-.name {
-  margin: 0;
-  font-size: 24px;
-  color: #0582ca;
-}
 
-.additional-text {
-  margin-top: 5px;
-  font-size: 16px;
-  color: #0582ca;
-  
-}
+
+
 /*κωδικας για την σελιδα  εισφορες,και αντριπροσοποι για το table*/
 main{
   padding: 32px;
