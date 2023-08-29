@@ -17,6 +17,7 @@ import Analogistikes from './Oikonomika-stoixeia/Analogistikes-meletes';
 import Oikonomika from './Oikonomika-stoixeia/Oikonomika-stoixeia';
 import Isologismoi from './Oikonomika-stoixeia/Isologismoi';
 import Ergo from './Enimerosh/To-ergo-tou-tameiou';
+import Entypa from './Entypa-aithsewn';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
       <Route path="Oikonomika" element={<Oikonomika/>}/>
       <Route path="Isologismoi" element={<Isologismoi/>}/>
       <Route path="Ergo" element={<Ergo/>}/>
-
+      <Route path="Entypa" element={<Entypa/>}/>
       </Routes>
     </div>
     </Router>

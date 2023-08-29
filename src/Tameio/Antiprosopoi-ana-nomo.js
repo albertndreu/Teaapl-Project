@@ -4,23 +4,12 @@ import { useState } from "react";
 const Antiprosopoi = () => {
 const [isFired, setIsFired] = useState(false);
     const handleDownload = () => {
-    
-    const fileContent = '...'; // Replace with your file content
-    const blob = new Blob([fileContent], { type: 'application/vnd.oasis.opendocument.spreadsheet' });
-
-    // Create a URL for the blob
-    const url = URL.createObjectURL(blob);
-
-    // Create a link element and simulate a click event
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'antiprosopoi.ods'; // Set the desired file name
-    link.click();
-
-    // Clean up the URL and link
-    URL.revokeObjectURL(url);
-    link.remove();
-    setIsFired(true);
+    const downloadLink = document.createElement('a');
+    downloadLink.href = process.env.PUBLIC_URL + '/antiprosopoi.ods';  // Replace with the actual file path
+    downloadLink.download = 'antiprosopoi.ods'; // Set the desired file name
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   };
 
     return (

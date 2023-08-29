@@ -23,21 +23,12 @@ import Dimotakis from './images/dimotakis.jpg';
 const Ergo = () => {
     const handleDownload = () => {
     
-    const fileContent = '...'; // Replace with your file content
-    const blob = new Blob([fileContent], { type: 'application/vnd.oasis.opendocument.spreadsheet' });
-
-    // Create a URL for the blob
-    const url = URL.createObjectURL(blob);
-
-    // Create a link element and simulate a click event
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'epistolh.DOC'; // Set the desired file name
-    link.click();
-
-    // Clean up the URL and link
-    URL.revokeObjectURL(url);
-    link.remove();
+    const downloadLink = document.createElement('a');
+    downloadLink.href = process.env.PUBLIC_URL + '/Epistolh.DOC';  // Replace with the actual file path
+    downloadLink.download = 'ΕΥΧΑΡΙΣΤΗΡΙΑ ΕΠΙΣΤΟΛΗ (10-02-2015) ΓΙΑ ΚΑΡΑΜΠΕΛΙΑ.DOC'; // Set the desired file name
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
     
   };
 
